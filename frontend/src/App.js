@@ -1,6 +1,7 @@
 import React from "react";
-import Footer from "./components/header/Footer";
-import Header from "./components/header/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Contact from "./components/Contact";
 import {Tab, Tabs} from "react-bootstrap";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <div className="row">
           <div className="col-md-12 col-lg-6">
             <div className="screenWords">
-              <h1>Hello, I'm Irene.</h1>
+              <h1>Hello, I'm Devin.</h1>
               <p>
                 A full-stack developer. Specializing in building exceptional
                 trending mobile applications and websites. Feel free to take a
@@ -45,7 +46,7 @@ function App() {
           </div>
           <div className="col-md-12 col-lg-6">
             <div className="screenImage">
-              <img src="./images/main2.png" alt="irene blog" />
+              <img src="/images/logo192.png" alt="irene blog" />
             </div>
           </div>
         </div>
@@ -56,7 +57,7 @@ function App() {
     <div className="section" id="services">
       <div className="container rows">
         <Tabs defaultActiveKey="services" className="tab">
-          <Tab className="tablinks" eventKey="services" title="services">
+          <Tab className="tablinks" eventKey="services" title="Services">
           <div className="container rows">
         <div className="tabcontent" id="London">
           <div className="row">
@@ -81,7 +82,7 @@ function App() {
               <div className="sectionBox">
                 <div className="sectionImage">
                   <img
-                    src="./assets/images/img2.svg"
+                    src="/images/logo192.png"
                     alt="Mobile Development"
                   />
                 </div>
@@ -387,42 +388,7 @@ function App() {
     </section>
 
     {/* CONTACT */}
-    <div className="contactme" id="contact">
-      <div className="contactOverlay">
-        <div className="container">
-          <div className="form">
-            <form action="" onSubmit="">
-              <div className="formWord">
-                <h2>Say Hello!</h2>
-                <span>Full Name</span>
-                <br />
-                <input className="input100" type="text" name="fullName" required />
-                <br />
-                <span>Phone Number</span>
-                <br />
-                <input className="input100" type="text" name="phone" required />
-                <br />
-                <span>Enter Email</span>
-                <br />
-                <input className="input100" type="text" name="email" required />
-                <br />
-              </div>
-              <div className="formWord">
-                <span>Message</span>
-                <br />
-                <textarea name="message" required></textarea>
-                <br />
-                <button>SUBMIT</button>
-                {/*
-                <div className="row">{showResults ?
-                 <Results /> : null}
-                </div>*/}
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Contact/>
 
     {/* RECENT WORKS */}
     <div className="container" id="blogs">
